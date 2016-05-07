@@ -1,0 +1,39 @@
+<idea-plugin version="2">
+    <id>dk.erikzielke.gitblit</id>
+    <name>GitBlit Plugin</name>
+    <version>1.0</version>
+    <vendor email="ez@live.dk" url="http://www.github.com/erikzielke">Erik Zielke</vendor>
+
+    <description><![CDATA[
+      This plugin is for easily checking out repositories hosted via GitBlit]]></description>
+
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="141.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+
+    -->
+    <depends>com.intellij.modules.lang</depends>
+    <depends>Git4Idea</depends>
+
+    <application-components>
+        <component>
+            <implementation-class>dk.erikzielke.gitblit.GitblitApplicationComponent</implementation-class>
+        </component>
+    </application-components>
+
+
+    <extensions defaultExtensionNs="com.intellij">
+        <checkoutProvider implementation="dk.erikzielke.gitblit.GitblitCheckoutProvider"/>
+        <applicationConfigurable instance="dk.erikzielke.gitblit.settings.GitblitSettingsConfigurable" />
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+
+</idea-plugin>

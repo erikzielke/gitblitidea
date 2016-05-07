@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="git4idea-rt">
+    <CLASSES>
+      <root url="jar://$APPLICATION_HOME_DIR$/plugins/git4idea/lib/git4idea-rt.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/plugins/git4idea/lib/git4idea.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/plugins/git4idea/lib/trilead-ssh2.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/plugins/git4idea/lib/remote-servers-git.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/plugins/git4idea/lib/ini4j-0.5.2-patched.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
